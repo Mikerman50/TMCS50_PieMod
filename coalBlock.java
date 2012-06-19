@@ -10,7 +10,7 @@ import java.util.Random;
 
     public int idDropped(int i, Random random)
     {
-      return Item.Coal.shiftedIndex;
+      return Item.coal.shiftedIndex;
     }
 
     public int quantityDropped(Random random)
