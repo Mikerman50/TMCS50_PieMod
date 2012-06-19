@@ -1,8 +1,8 @@
 
 package net.minecraft.src;
 
-public class Dough extends Item
-{public Dough(int i)
+public class ItemDough extends Item
+{public ItemDough(int i)
   {
     super(i);
     maxStackSize = 16;   

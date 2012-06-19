@@ -1,9 +1,9 @@
 package net.minecraft.src;
 import java.util.Random;
         
-  public class coalBlock extends Block
+  public class BlockcoalBlock extends Block
   { 
-    public coalBlock(int par1, int par2)
+    public BlockcoalBlock(int par1, int par2)
     {
         super(par1, par2, Material.rock);
     }    
