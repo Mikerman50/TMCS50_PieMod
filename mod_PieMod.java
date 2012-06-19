@@ -1,9 +1,21 @@
 package net.minecraft.src;
 import java.util.Random;
+import net.minecraft.src.forge.*;
 
-public class mod_PieMod extends BaseMod
+public class mod_PieMod extends NetworkMod
 {  
-  
+    @Override
+    public boolean clientSideRequired()
+    {
+            return true;
+    }
+
+    @Override
+    public boolean serverSideRequired()
+    {
+            return false;
+    }
+    
   //Declare coalBlock
   public static Block m_coalBlock = new BlockcoalBlock(701, 0)
     .setHardness(2F).setResistance(10F)
@@ -38,10 +50,10 @@ public class mod_PieMod extends BaseMod
 
     //Textures
      //Blocks  
-    m_coalBlock.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "images/coalblock.png");
+    m_coalBlock.blockIndexInTexture = ModLoader.addOverride("/terrain.png", "/coalblock.png");
      //Items
-    m_Dough.iconIndex = ModLoader.addOverride("/gui/items.png", "images/dough.png");
-    m_piecase.iconIndex = ModLoader.addOverride("/gui/items.png", "images/piecase");
+    m_Dough.iconIndex = ModLoader.addOverride("/gui/items.png", "/dough.png");
+    m_piecase.iconIndex = ModLoader.addOverride("/gui/items.png", "/piecase.png");
      //ToolSets
 
     //Recipes
